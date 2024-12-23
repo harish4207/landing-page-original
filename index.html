@@ -10,6 +10,14 @@
      text-transform: capitalize;
     }</style> -->
     <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+        }
         #heading1{
             color: aquamarine;
         }
@@ -17,10 +25,71 @@
             color: blue;
         }
         .para{
-            font-family: 'Courier New', Courier, monospace;
+            font-family:'Courier New', Courier, monospace;
             font-style: italic;
             font-size: larger;
         }
+        /* .navbar{
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .links{
+            display: flex;
+        } */
+         nav{
+            display: flex;
+            height: 8vh;
+            text-align: center;
+            background-color: rgb(244, 242, 250);
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px;
+            position: fixed;
+         }
+         .links{
+            text-align: center;
+            display: flex;
+            gap: 10px;
+         }
+         .links a {
+            text-decoration: none;
+            color: rgb(98, 178, 129);
+         }
+         .links a:hover{
+            background-color: rgba(30, 18, 54, 0.74);
+            color: aliceblue;
+         }
+         .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .destinations{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 30px;
+            
+        }
+         .one{
+            background-image: url(https://images.pexels.com/photos/29450972/pexels-photo-29450972/free-photo-of-majestic-matterhorn-peak-at-sunrise.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+        .two{
+            background-image: url(https://images.pexels.com/photos/1581200/pexels-photo-1581200.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+        .three{
+            background-image: url(https://images.pexels.com/photos/7815416/pexels-photo-7815416.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+        .four{
+            background-image: url(https://images.pexels.com/photos/12271301/pexels-photo-12271301.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+        .five{
+            background-image: url(https://images.pexels.com/photos/29823041/pexels-photo-29823041/free-photo-of-scenic-snowy-road-through-norwegian-winter-mountains.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,10 +104,56 @@
     <h1 id="heading2">guys</h1>
     <p class="para">knqioh2hrfnfoiwhr</p>
     <p class="para">ahrwejbwiguwa</p> -->
-    <header class="landing">
+    
+
+   
+
+    <!-- <div class="navbar">
+        <div class="logo">
+            <h2>traveller</h2> 
+        </div>
+        <div class="links">
+            <a href="#home">Home</a><br>
+            <a href="#about">About</a><br>
+            <a href="#services">Services</a><br>
+            <a href="#contact">Contact</a><br>
+        </div>
+        
+    </div> -->
+    <nav>
+        <div class="logo">
+            <h1>Traveller</h1>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a><br>
+            <a href="#cards">top destinations</a><br>
+            <a href="#services">Services</a><br>
+            <a href="#contact">Contact</a><br>
+        </div>
+    </nav>
+    
+   
+    <section class="landing">
+        <div class="data">
     <h1 >Explore the nature</h1>
     <p>Adventurous nature with waterfalls and tropical forests</p>
     <button>book now</button>
-</header>
+</div>
+    </section>
+    <section class="cards" id="cards">
+        <div class="container">
+
+            <div class="destinations one"> <h2>mount everest</h2>
+            </div>
+            <div class="destinations two"><h2>pyongong lake</h2></div>
+            <div class="destinations three"><h2>western ghats</h2></div>
+            <div class="destinations four"><h2>nandi hills</h2></div>
+            <div class="destinations five"><h2>shimla</h2></div>
+    
+        </div>
+        
+    </section>
+
 </body>
 </html>
